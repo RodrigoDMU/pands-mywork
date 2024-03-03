@@ -29,4 +29,12 @@ print(f"The square root of {x} is approx {p:.1f}.")
 # Reference: Introdução á Programação com PythonÇ Algoritmos 
 # e Lógica de Programação para Iniciantes
 
+# Using import math
+import math
+
+x = float(input("Please enter a positive number: "))
+sqrRoot = math.sqrt(x)
+
+print (f"The square root of {x} is approx. {sqrRoot:.1f}.")
+
    
