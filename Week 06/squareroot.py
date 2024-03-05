@@ -18,6 +18,26 @@
 # Author: Rodrigo De Martino Ucedo
 
 
+# Option 01 - Using import math
+import math
+
+x = float(input("Please enter a positive number: "))
+sqrRoot = math.sqrt(x)
+
+print (f"The square root of {x} is approx. {sqrRoot:.1f}.")
+
+# Option 02 - Using *0.5 Newton's method
+
+num = float(input("Please enter a positive number: "))
+approx = 0.5 * num
+better = 0.5 * (approx + num / approx)
+while (better != approx):
+    approx = better
+    better = 0.5 * (approx + num / approx)
+print (f"The square root of {num} is approx. {better:.1f}.")
+
+# Option 03 - Newton's method
+
 x = float(input("Please enter a positive number: "))
 a = 2
 while abs(x - (a * a)) > 0.00001: 
@@ -26,15 +46,5 @@ while abs(x - (a * a)) > 0.00001:
 print(f"The square root of {x} is approx {p:.1f}.")
 
 
-# Reference: Introdução á Programação com PythonÇ Algoritmos 
+# Reference: Introdução á Programação com Python Algoritmos 
 # e Lógica de Programação para Iniciantes
-
-# Using import math
-import math
-
-x = float(input("Please enter a positive number: "))
-sqrRoot = math.sqrt(x)
-
-print (f"The square root of {x} is approx. {sqrRoot:.1f}.")
-
-   
